@@ -121,31 +121,7 @@
     </div>
 
     <!-- Navigation Header -->
-    <header class="sticky top-0 z-40 backdrop-blur-md bg-parchment-50/80 border-b border-parchment-300/50 transition-all duration-300">
-        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#hero" class="font-script text-2xl sm:text-3xl text-botanical-700 hover:text-rose-dark transition-colors">
-                Audree & Jack
-            </a>
-            <nav class="hidden md:flex space-x-8 font-sans text-xs tracking-widest uppercase font-medium text-botanical-700">
-                <a href="#hero" class="hover:text-rose-dark transition-colors py-1">Home</a>
-                <a href="#details" class="hover:text-rose-dark transition-colors py-1">Details</a>
-                <a href="#schedule" class="hover:text-rose-dark transition-colors py-1">Schedule</a>
-                <a href="#registry" class="hover:text-rose-dark transition-colors py-1">Registry</a>
-                <a href="#rsvp" class="hover:text-rose-dark transition-colors py-1">RSVP</a>
-            </nav>
-            <button onclick="toggleMobileMenu()" class="md:hidden text-botanical-700 text-xl focus:outline-none p-2" aria-label="Toggle Navigation">
-                <i class="fa-solid fa-bars" id="menuIcon"></i>
-            </button>
-        </div>
-        <!-- Mobile Navigation Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-parchment-100/95 border-b border-parchment-300 px-6 py-4 space-y-3 font-sans text-xs tracking-widest uppercase text-center">
-            <a href="#hero" onclick="toggleMobileMenu()" class="block py-2 text-botanical-700 hover:text-rose-dark">Home</a>
-            <a href="#details" onclick="toggleMobileMenu()" class="block py-2 text-botanical-700 hover:text-rose-dark">Details</a>
-            <a href="#schedule" onclick="toggleMobileMenu()" class="block py-2 text-botanical-700 hover:text-rose-dark">Schedule</a>
-            <a href="#registry" onclick="toggleMobileMenu()" class="block py-2 text-botanical-700 hover:text-rose-dark">Registry</a>
-            <a href="#rsvp" onclick="toggleMobileMenu()" class="block py-2 text-rose-dark font-semibold">RSVP Now</a>
-        </div>
-    </header>
+
 
     <!-- Main Container -->
     <main class="max-w-4xl mx-auto px-4 py-8 relative z-10 space-y-16 sm:space-y-24">
@@ -204,97 +180,6 @@
             </div>
         </section>
 
-        <!-- EVENT DETAILS & VENUES -->
-        <section id="details" class="scroll-mt-24">
-            <div class="text-center mb-12">
-                <span class="font-sans text-xs tracking-widest uppercase text-rose-dark font-semibold">Location & Info</span>
-                <h2 class="font-script text-5xl text-botanical-800 mt-1">Wedding Details</h2>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Ceremony Card -->
-                <div class="parchment-card p-8 rounded-3xl relative overflow-hidden border border-parchment-300 flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-full bg-rose-light/50 flex items-center justify-center text-rose-dark text-xl mb-4">
-                            <i class="fa-solid fa-church"></i>
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-botanical-800 mb-2">The Ceremony</h3>
-                        <p class="font-sans text-sm text-botanical-600 mb-4 font-medium">May 23, 2026 @ 4:00 PM</p>
-                        <p class="font-serif text-lg text-botanical-700 leading-relaxed mb-4">
-                            Join us as we exchange vows surrounded by family and friends in an intimate garden setting.
-                        </p>
-                        <p class="font-sans text-xs text-botanical-600 font-semibold mb-6">
-                            <i class="fa-solid fa-location-dot mr-1 text-rose-dark"></i> 2180 Inwood Rd
-                        </p>
-                    </div>
-                    <a href="https://maps.google.com/?q=2180+Inwood+Rd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-sans uppercase tracking-widest text-rose-dark font-semibold hover:underline">
-                        Get Directions <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-
-                <!-- Reception Card -->
-                <div class="parchment-card p-8 rounded-3xl relative overflow-hidden border border-parchment-300 flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 rounded-full bg-botanical-500/10 flex items-center justify-center text-botanical-600 text-xl mb-4">
-                            <i class="fa-solid fa-glass-cheers"></i>
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-botanical-800 mb-2">The Reception</h3>
-                        <p class="font-sans text-sm text-botanical-600 mb-4 font-medium">Following Later in the Evening</p>
-                        <p class="font-serif text-lg text-botanical-700 leading-relaxed mb-4">
-                            Celebrate with dinner, drinks, and dancing later in the evening with the newlyweds.
-                        </p>
-                        <p class="font-sans text-xs text-botanical-600 font-semibold mb-6">
-                            <i class="fa-solid fa-location-dot mr-1 text-rose-dark"></i> Dove Church
-                        </p>
-                    </div>
-                    <a href="https://maps.google.com/?q=Dove+Church" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-sans uppercase tracking-widest text-rose-dark font-semibold hover:underline">
-                        Get Directions <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SCHEDULE OF EVENTS / TIMELINE -->
-        <section id="schedule" class="scroll-mt-24">
-            <div class="text-center mb-12">
-                <span class="font-sans text-xs tracking-widest uppercase text-rose-dark font-semibold">Order of Events</span>
-                <h2 class="font-script text-5xl text-botanical-800 mt-1">Schedule of the Day</h2>
-            </div>
-
-            <div class="max-w-2xl mx-auto relative pl-6 border-l-2 border-botanical-500/30 space-y-10">
-                <!-- Timeline Item 1 -->
-                <div class="relative">
-                    <div class="absolute -left-[31px] top-1 w-5 h-5 rounded-full bg-rose-watercolor border-4 border-parchment-100"></div>
-                    <div class="parchment-card p-6 rounded-2xl">
-                        <span class="font-sans text-xs font-bold text-rose-dark tracking-widest uppercase">4:00 PM</span>
-                        <h4 class="font-serif text-xl font-bold text-botanical-800 mt-1">Ceremony Begins</h4>
-                        <p class="font-serif text-botanical-600 mt-1">Please arrive 20 minutes to an hour early to find your seat and enjoy the woods.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 2 -->
-                <div class="relative">
-                    <div class="absolute -left-[31px] top-1 w-5 h-5 rounded-full bg-botanical-500 border-4 border-parchment-100"></div>
-                    <div class="parchment-card p-6 rounded-2xl">
-                        <span class="font-sans text-xs font-bold text-rose-dark tracking-widest uppercase">5:15 PM</span>
-                        <h4 class="font-serif text-xl font-bold text-botanical-800 mt-1">Photos</h4>
-                        <p class="font-serif text-botanical-600 mt-1">Enjoy the coffee bar while family and bridal party photos take place.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 3 -->
-                <div class="relative">
-                    <div class="absolute -left-[31px] top-1 w-5 h-5 rounded-full bg-rose-watercolor border-4 border-parchment-100"></div>
-                    <div class="parchment-card p-6 rounded-2xl">
-                        <span class="font-sans text-xs font-bold text-rose-dark tracking-widest uppercase">6:30 PM</span>
-                        <h4 class="font-serif text-xl font-bold text-botanical-800 mt-1">Reception & Dinner</h4>
-                        <p class="font-serif text-botanical-600 mt-1">Join us at Dove Church for dinner, speeches, and wedding celebration.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
 
     <!-- FOOTER -->
     <footer class="mt-20 py-10 border-t border-parchment-300/60 text-center relative z-10 bg-parchment-50/50">
