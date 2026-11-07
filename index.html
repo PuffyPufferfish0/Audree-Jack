@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -32,9 +35,9 @@
                             800: '#2d3822',
                         },
                         rose: {
-                             watercolor: '#d88390',
-                             dark: '#c46877',
-                             light: '#f2cfd5',
+                            watercolor: '#d88390',
+                            dark: '#c46877',
+                            light: '#f2cfd5',
                         }
                     },
                     fontFamily: {
@@ -51,7 +54,7 @@
         /* Custom Parchment Background Texture & Styles */
         body {
             background-color: #f4eee1;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 10% 20%, rgba(216, 131, 144, 0.08) 0%, transparent 40%),
                 radial-gradient(circle at 90% 80%, rgba(90, 107, 71, 0.08) 0%, transparent 40%),
                 radial-gradient(circle at 50% 50%, rgba(236, 226, 207, 0.5) 0%, rgba(223, 210, 181, 0.3) 100%);
@@ -73,8 +76,15 @@
 
         /* Floating Botanical Decorative Animation */
         @keyframes float-slow {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-8px) rotate(1deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-8px) rotate(1deg);
+            }
         }
 
         .floating-botanical {
@@ -85,38 +95,44 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #f4eee1;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #c46877;
             border-radius: 4px;
         }
     </style>
 </head>
+
 <body class="min-h-screen relative overflow-x-hidden selection:bg-rose-light selection:text-botanical-800">
 
     <!-- Subtle Background Botanical SVGs (Top Left & Bottom Right) -->
     <div class="fixed top-0 left-0 w-48 sm:w-80 pointer-events-none z-0 opacity-40 floating-botanical">
         <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10,10 Q50,120 100,180 T180,280" stroke="#5a6b47" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M10,10 Q50,120 100,180 T180,280" stroke="#5a6b47" stroke-width="2.5" fill="none"
+                stroke-linecap="round" />
             <!-- Vines & Leaves -->
-            <path d="M45,90 Q20,70 15,40 Q40,55 45,90 Z" fill="#6b7d56" opacity="0.7"/>
-            <path d="M70,140 Q40,130 30,105 Q60,115 70,140 Z" fill="#5a6b47" opacity="0.8"/>
-            <path d="M110,195 Q85,200 70,180 Q95,170 110,195 Z" fill="#6b7d56" opacity="0.7"/>
+            <path d="M45,90 Q20,70 15,40 Q40,55 45,90 Z" fill="#6b7d56" opacity="0.7" />
+            <path d="M70,140 Q40,130 30,105 Q60,115 70,140 Z" fill="#5a6b47" opacity="0.8" />
+            <path d="M110,195 Q85,200 70,180 Q95,170 110,195 Z" fill="#6b7d56" opacity="0.7" />
             <!-- Orchid Flowers Pink -->
-            <path d="M35,65 C20,40 5,60 25,75 C45,90 50,70 35,65 Z" fill="#d88390" opacity="0.75"/>
-            <path d="M85,120 C65,100 50,120 70,135 C90,150 95,130 85,120 Z" fill="#c46877" opacity="0.8"/>
+            <path d="M35,65 C20,40 5,60 25,75 C45,90 50,70 35,65 Z" fill="#d88390" opacity="0.75" />
+            <path d="M85,120 C65,100 50,120 70,135 C90,150 95,130 85,120 Z" fill="#c46877" opacity="0.8" />
         </svg>
     </div>
 
-    <div class="fixed bottom-0 right-0 w-48 sm:w-80 pointer-events-none z-0 opacity-40 floating-botanical" style="animation-delay: -4s;">
+    <div class="fixed bottom-0 right-0 w-48 sm:w-80 pointer-events-none z-0 opacity-40 floating-botanical"
+        style="animation-delay: -4s;">
         <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="transform rotate-180">
-            <path d="M10,10 Q50,120 100,180 T180,280" stroke="#5a6b47" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M45,90 Q20,70 15,40 Q40,55 45,90 Z" fill="#6b7d56" opacity="0.7"/>
-            <path d="M70,140 Q40,130 30,105 Q60,115 70,140 Z" fill="#5a6b47" opacity="0.8"/>
-            <path d="M35,65 C20,40 5,60 25,75 C45,90 50,70 35,65 Z" fill="#d88390" opacity="0.75"/>
-            <path d="M85,120 C65,100 50,120 70,135 C90,150 95,130 85,120 Z" fill="#c46877" opacity="0.8"/>
+            <path d="M10,10 Q50,120 100,180 T180,280" stroke="#5a6b47" stroke-width="2.5" fill="none"
+                stroke-linecap="round" />
+            <path d="M45,90 Q20,70 15,40 Q40,55 45,90 Z" fill="#6b7d56" opacity="0.7" />
+            <path d="M70,140 Q40,130 30,105 Q60,115 70,140 Z" fill="#5a6b47" opacity="0.8" />
+            <path d="M35,65 C20,40 5,60 25,75 C45,90 50,70 35,65 Z" fill="#d88390" opacity="0.75" />
+            <path d="M85,120 C65,100 50,120 70,135 C90,150 95,130 85,120 Z" fill="#c46877" opacity="0.8" />
         </svg>
     </div>
 
@@ -128,16 +144,15 @@
 
         <!-- HERO / INVITATION SECTION -->
         <section id="hero" class="pt-6 sm:pt-12 text-center">
-            <div class="parchment-card rounded-3xl p-8 sm:p-14 relative overflow-hidden border-2 border-parchment-300/60 shadow-xl max-w-2xl mx-auto">
-                
+            <div
+                class="parchment-card rounded-3xl p-8 sm:p-14 relative overflow-hidden border-2 border-parchment-300/60 shadow-xl max-w-2xl mx-auto">
+
                 <!-- Inner Watercolor Frame Borders -->
                 <div class="absolute inset-3 border border-botanical-500/20 rounded-2xl pointer-events-none"></div>
                 <div class="absolute inset-5 border border-rose-dark/20 rounded-xl pointer-events-none"></div>
 
                 <!-- Subtitle -->
-                <p class="font-sans text-xs sm:text-sm tracking-widest uppercase text-botanical-600 mb-6 font-medium">
-                    Save The Date
-                </p>
+
 
                 <!-- Script Names Header -->
                 <h1 class="font-script text-6xl sm:text-8xl text-botanical-800 leading-none mb-2">
@@ -149,12 +164,15 @@
                 </h1>
 
                 <!-- Core Invitation Message -->
-                <p class="font-serif text-lg sm:text-xl text-botanical-700 italic max-w-md mx-auto mb-6 leading-relaxed">
+                <p
+                    class="font-serif text-lg sm:text-xl text-botanical-700 italic max-w-md mx-auto mb-6 leading-relaxed">
                     Please join us to celebrate the wedding of
                 </p>
 
-                <p class="font-sans font-semibold text-sm sm:text-base text-botanical-800 tracking-wider uppercase mb-6">
+                <p
+                    class="font-serif text-lg sm:text-xl text-botanical-700 italic max-w-md mx-auto mb-6 leading-relaxed">
                     Audree Testa & Jack Anderson
+
                 </p>
 
                 <!-- Date & Location Banner -->
@@ -163,93 +181,126 @@
                         MAY 23 <span class="text-lg font-normal text-botanical-700">@ 4 PM</span>
                     </p>
                     <p class="font-serif text-lg text-botanical-700 mt-1">
-                        2180 Inwood Rd
+                        <a href="https://www.google.com/maps/place/2180+Inwood+Rd,+Wilmington,+OH+45177/@39.5385584,-83.9231877,17z/data=!3m1!4b1!4m6!3m5!1s0x8840be3211619705:0x196e2f0da9f27a7c!8m2!3d39.5385584!4d-83.9206128!16s%2Fg%2F11hc_5jw87?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center text-xs font-sans uppercase tracking-widest text-black   font-semibold hover:underline">
+                            2180 Inwood Rd Wilmington OH<i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
                     </p>
                 </div>
-
                 <p class="font-serif text-md sm:text-lg text-botanical-600 italic">
                     Reception following later in the evening at Dove Church
                 </p>
+                <p class="font-serif text-lg text-botanical-700 mt-1">
+                    <a href="https://maps.google.com/?q=Dove+Church" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center text-xs font-sans uppercase tracking-widest text-black font-semibold hover:underline">
+                        1499 Rombach Ave, Wilmington OH<i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
 
-                <!-- Action Buttons -->
+                </p>
+
+
+
+
+                <!-- Action Buttons 
 
             </div>
         </section>
 
 
-    <!-- FOOTER -->
+        <!-- FOOTER -->
 
 
-    <!-- JavaScript Interactions -->
-    <script>
-        // Set target wedding date: May 23 @ 4:00 PM
-        // Uses current year or next upcoming May 23
-        const getWeddingDate = () => {
-            const now = new Date();
-            let year = now.getFullYear();
-            let weddingDate = new Date(`May 23, ${year} 16:00:00`);
-            if (now > weddingDate) {
-                weddingDate = new Date(`May 23, ${year + 1} 16:00:00`);
-            }
-            return weddingDate;
-        };
+                <!-- JavaScript Interactions -->
+                <script>
+                    // Set target wedding date: May 23 @ 4:00 PM
+                    // Uses current year or next upcoming May 23
+                    const getWeddingDate = () => {
+                        const now = new Date();
+                        let year = now.getFullYear();
+                        let weddingDate = new Date(`May 23, ${year} 16:00:00`);
+                        if (now > weddingDate) {
+                            weddingDate = new Date(`May 23, ${year + 1} 16:00:00`);
+                        }
+                        return weddingDate;
+                    };
 
-        const weddingDate = getWeddingDate();
+                    const weddingDate = getWeddingDate();
 
-        // Live Countdown Timer
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = weddingDate - now;
+                    // Live Countdown Timer
+                    function updateCountdown() {
+                        const now = new Date().getTime();
+                        const distance = weddingDate - now;
 
-            if (distance < 0) {
-                document.getElementById('countdown').innerHTML = "<div class='col-span-4 font-serif text-2xl text-rose-dark'>The Celebration Has Begun!</div>";
-                return;
-            }
+                        if (distance < 0) {
+                            document.getElementById('countdown').innerHTML = "<div class='col-span-4 font-serif text-2xl text-rose-dark'>The Celebration Has Begun!</div>";
+                            return;
+                        }
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById('days').innerText = String(days).padStart(2, '0');
-            document.getElementById('hours').innerText = String(hours).padStart(2, '0');
-            document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
-        }
+                        document.getElementById('days').innerText = String(days).padStart(2, '0');
+                        document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+                        document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+                        document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+                    }
 
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+                    setInterval(updateCountdown, 1000);
+                    updateCountdown();
 
-        // Navigation Toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
+                    // Navigation Toggle
+                    function toggleMobileMenu() {
+                        const menu = document.getElementById('mobileMenu');
+                        menu.classList.toggle('hidden');
+                    }
 
-        // Add To Calendar (.ics File Generator)
-        function addToCalendar() {
-            const icsData = [
-                "BEGIN:VCALENDAR",
-                "VERSION:2.0",
-                "PRODID:-//Audree and Jack Wedding//EN",
-                "BEGIN:VEVENT",
-                "SUMMARY:Audree & Jack's Wedding",
-                "DESCRIPTION:Please join us to celebrate the wedding of Audree Testa & Jack Anderson. Reception following at Dove Church.",
-                "LOCATION:2180 Inwood Rd",
-                "DTSTART:20260523T160000",
-                "DTEND:20260523T220000",
-                "END:VEVENT",
-                "END:VCALENDAR"
-            ].join("\n");
+                    // Add To Calendar (.ics File Generator)
+                    function addToCalendar() {
+                        const icsData = [
+                            "BEGIN:VCALENDAR",
+                            "VERSION:2.0",
+                            "PRODID:-//Audree and Jack Wedding//EN",
+                            "BEGIN:VEVENT",
+                            "SUMMARY:Audree & Jack's Wedding",
+                            "DESCRIPTION:Please join us to celebrate the wedding of Audree Testa & Jack Anderson. Reception following at Dove Church.",
+                            "LOCATION:2180 Inwood Rd",
+                            "DTSTART:20260523T160000",
+                            "DTEND:20260523T220000",
+                            "END:VEVENT",
+                            "END:VCALENDAR"
+                        ].join("\n");
 
-            const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8;' });
-            const link = document.createElement('a');
-            link.href = window.URL.createObjectURL(blob);
-            link.setAttribute('download', 'Audree_and_Jack_Wedding.ics');
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    </script>
+                        const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8;' });
+                        const link = document.createElement('a');
+                        link.href = window.URL.createObjectURL(blob);
+                        link.setAttribute('download', 'Audree_and_Jack_Wedding.ics');
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    }
+                </script>
 </body>
+
+
+
+<!-- Reception Card -->
+<div
+    class="parchment-card p-8 rounded-3xl relative overflow-hidden border border-parchment-300 flex flex-col justify-between">
+    <div>
+        <h3 class="font-serif text-2xl font-bold text-botanical-800 mb-2">Registry</h3>
+        <a href="https://www.myregistry.com/wedding-registry/jack-anderson-and-audree-testa-wilmington-oh/5630776" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center text-xs font-sans uppercase tracking-widest text-black font-semibold hover:underline">
+            <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>&nbsp;View our Wedding Registry<i class="fa-solid fa-arrow-left ml-2 text-xs"></i>
+        </a>
+        <p class="font-sans text-xs text-botanical-600 font-semibold mb-6">
+        </p>
+    </div>
+
+</div>
+</div>
+</section>
+
 </html>
